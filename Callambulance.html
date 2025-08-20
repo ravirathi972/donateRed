@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call Ambulance | Home Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="./assets/css/style.css" class="style">
+    <style>
+      *{
+    margin: 0;
+    padding: 0;
+    font-family: var(--ff-roboto);}
+
+.header{
+    min-height: 23vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),
+    background-size: cover;
+    position: relative;
+}
+
+
+nav{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(56, 51, 51, 0.644);
+    position:fixed;
+    top: 0;
+    z-index: 100;
+}
+
+
+.nav-links{
+    flex: 1;
+    text-align:center ;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+
+}
+
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 19px ;
+    
+}
+
+.nav-links ul li ::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+    
+}
+
+.nav-links ul li:hover ::after{
+    width: 100%;
+}
+
+.text-box{
+    width: 90% ;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.text-box h1{
+    font-size: 62px;
+}
+
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+
+
+
+
+
+.users{
+    font-size: 40px;
+}
+
+/* ------ Facilities ------- */
+.course{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.course h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+p{
+    color:darkslategrey;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+
+}
+
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    text-align: justify;
+}
+
+.course-col{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    text-align: justify;
+
+}
+
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+
+
+
+
+/* ------- campus --------- */
+
+
+
+
+/* ----- Facilities ------- */
+
+
+
+
+
+/* ------- testimonials ------- */
+
+
+
+
+
+    /* color: #f44336 ; */
+
+
+
+/* ------------ Call To Action ------------ */
+
+
+
+
+
+
+/* <!-- ------------ Footer ------------ --> */
+
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.footer .icon{
+    cursor: pointer;
+    margin: 0 13px;
+    padding: 10px 0;
+}
+
+
+
+/* ---------------------- Blog page  ------------------------- */
+
+/* <!-- ------------  contact Us  ------------ --> */
+
+
+
+    </style>
+
+</head>
+
+
+<body>
+    <header class="header">
+        <div class="header-top">
+          <div class="container">
+            <ul class="contact-list">
+              <li class="contact-item">
+                <ion-icon name="mail-outline"></ion-icon>
+                <a href="mailto:donatered185@gmail.com" class="contact-link">donatered185@gmail.com</a>
+              </li>
+              <li class="contact-item">
+                <ion-icon name="call-outline"></ion-icon>
+                <a href="tel:+918059160530" class="contact-link">+91-8059160530</a>
+              </li>
+            </ul>
+            <ul class="social-list">
+              
+              <li>
+                <a href=" https://www.instagram.com/donate_red_/" class="social-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+              
+            
+              <li>
+                <a href="https://youtu.be/Af0gk_kiGac" class="social-link">
+                  <ion-icon name="logo-youtube"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="header-bottom" data-header>
+          <div class="container">
+            <a href="#" class="logo">Donate Red</a>
+            <nav class="navbar container" data-navbar>
+              <ul class="navbar-list">
+                <li>
+                  <a href="index.html" class="navbar-link" data-nav-link>Home</a>
+                </li>
+                <li>
+                  <a href="#service" class="navbar-link" data-nav-link>Find donor</a>
+                </li>
+                <li>
+                  <a href="about.html" class="navbar-link" data-nav-link>About Us</a>
+                </li>
+                <li>
+                  <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
+                </li>
+                <li>
+                  <a href="contact.php" class="navbar-link" data-nav-link>Contact</a>
+                </li>
+              </ul>
+            </nav>
+            <a href="register.php" class="btn">Login / Register</a>
+            <button class="nav-toggle-btn" aria-label="Toggle menu" data-nav-toggler>
+              <ion-icon name="menu-sharp" aria-hidden="true" class="menu-icon"></ion-icon>
+              <ion-icon name="close-sharp" aria-hidden="true" class="close-icon"></ion-icon>
+            </button>
+          </div>
+        </div>
+      </header>
+    
+    <section class="header"> 
+        <img src="./assets/images/paramedicambulanceset.jpg" width="100%"/>       
+        <div class="text-box">
+            <h1>Call Ambulance</h1>
+            <p>Kyuki hum maante hain apno se badh kar kuch bhi nhi! <br> 
+            <br>  Because we know that beloved ones are important!  We feel it when you want to call for help.</p>
+        
+            <p class="users">users every min</p>
+        </div>
+    </section>
+
+
+<!--  ------------- Facilities ---------------  -->
+<section class="course">
+    <h1>Steps to follow</h1>
+    <p><strong>Now calling for help is easy with us! Just follow 3 simple steps and book your ambulance at the urgent hour at your doorstep.</strong></p>
+
+    <div class="row">
+        <div class="course-col">
+            <h3>Contact No</h3>
+            <ul>
+              <li>
+
+           
+            
+            <div class="item-icon">
+              <ion-icon name="call-outline"></ion-icon>
+              <a href="tel:+918050160530" class="footer-link">+91-8059-160-530</a>
+            </div>
+          </li>
+          </ul>
+           
+        </div>
+        
+        <div class="course-col">
+            <h3>Enter your Location</h3>
+            <p>Go to the button "Need help? Book yours!" at the Home page. The button asks you to enter your location and uses the address to find the nearest available hospitals and free ambulances. The charges will be shown.  </p>
+        </div>
+
+        <div class="course-col">
+            <h3>Book your ambulance</h3>
+            <p>To book your ambulance from the available list, pick the hospital suited to you. And click "Book Now" button. Your ambulance is booked. It will reach to you in 10-15 minutes.</p>
+        </div>
+    </div>
+
+</section>
+
+
+
+<!-- ---------- Areas we Cover ------------  -->
+
+
+
+
+<!-- --------- Facilities ---------- -->
+
+
+
+
+<!-- --------- testimonial ----------- -->
+
+
+
+
+
+<!-- ------------ Call To Action ------------ -->
+
+<!-- <section class="cta">
+    <h1>Need Help? We are one call away from your location!</h1>
+    <a href="" class="hero-btn">CONTACT US</a>
+</section> -->
+<!--Footer-->
+<footer class="footer">
+    <div class="footer-top section">
+      <div class="container">
+        <div class="footer-brand">
+          <a href="#" class="logo">Donate Red</a>
+          <p class="footer-text">
+            We are passionate about connecting blood donors with recipients and bridging the gap in the healthcare industry. 
+            We strive to create a community that fosters empathy, support, and solidarity among individuals who are committed to making a difference.
+          </p>
+          <div class="schedule">
+            <div class="schedule-icon">
+              <ion-icon name="time-outline"></ion-icon>
+            </div>
+            <span class="span">
+              24 X 7:<br>
+              365 Days
+            </span>
+          </div>
+        </div>
+        <ul class="footer-list">
+          <li>
+            <p class="footer-list-title">Other Links</p>
+          </li>
+          <li>
+            <a href="index.html" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+              <span class="span">Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="#service" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+              <span class="span">Find donor</span>
+            </a>
+          </li>
+          <li>
+            <a href="about.html" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+              <span class="span">About us</span>
+            </a>
+          </li>
+          <li>
+            <a href="#blog" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+              <span class="span">Blog</span>
+            </a>
+          </li>
+          <li>
+            <a href="contact.php" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+              <span class="span">Contact</span>
+            </a>
+          </li>
+          <li>
+            <a href="register.php" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+              <span class="span">Login / Register</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="footer-list">
+          <li>
+            <p class="footer-list-title">Our Services</p>
+          </li>
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+              <span class="span">xxxxxxxxx</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+              <span class="span">xxxxxxxxx</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+              <span class="span">xxxxxxxxx</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+              <span class="span">xxxxxxxxx</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+              <span class="span">xxxxxxxxx</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="add-outline"></ion-icon>
+              <span class="span">xxxxxxxxx</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="footer-list">
+          <li>
+            <p class="footer-list-title">Contact Us</p>
+          </li>
+          <li class="footer-item">
+            <div class="item-icon">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+            <a href="https://goo.gl/maps/BYA5MxQUg5B8ZFLcA">
+            <address class="item-text">
+              SRL Diagnostic Centre,<br>
+               behind Civil Hospital, Sukhdev Nagar, Tehsil Camp, Panipat, Haryana 132103
+            </address>
+          </a>
+          </li>
+          <li class="footer-item">
+            <div class="item-icon">
+              <ion-icon name="call-outline"></ion-icon>
+            </div>
+            <a href="tel:+918050160530" class="footer-link">+91-8059-160-530</a>
+          </li>
+          <li class="footer-item">
+            <div class="item-icon">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+            <a href="mailto:help@example.com" class="footer-link">donatered185@gmail.com</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p class="copyright">
+          &copy; 2024 All Rights Reserved by Donate Red
+        </p>
+        <ul class="social-list">
+         
+          <li>
+            <a href=" https://www.instagram.com/donate_red_/" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="https://youtu.be/Af0gk_kiGac" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!--BACK TO TOP-->
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="caret-up" aria-hidden="true"></ion-icon>
+  </a>
+
+  <!--custom js link-->
+  <script src="./assets/js/script.js" defer></script>
+  <!--ionicon link-->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
